@@ -1,0 +1,196 @@
+/* Design is based on web first*/
+/* Bellow 1600px (dektops) */
+@media (max-width: 1600px) {
+  .customers {
+    width: 1250px;
+    grid-template-columns: 10fr 10fr 10fr;
+  }
+}
+
+/* Bellow 1400px (smaller dektops) */
+@media (max-width: 1400px) {
+  .customers {
+    width: 1150px;
+  }
+}
+
+/* Bellow 1250px */
+@media (max-width: 1250px) {
+  .customers {
+    width: 1050px;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+}
+
+/* Bellow 1110px */
+@media (max-width: 1110px) {
+  .customers {
+    width: 900px;
+  }
+
+  nav {
+    padding: 0 100px;
+  }
+
+  input.search {
+    width: 500px;
+  }
+}
+
+@media (max-width: 940px) {
+  .customers {
+    width: 800px;
+  }
+
+  input.search {
+    width: 400px;
+  }
+}
+
+@media (max-width: 840px) {
+  .customers {
+    width: 640px;
+    grid-template-columns: 1fr;
+  }
+
+  input.search {
+    width: 300px;
+  }
+
+  .card,
+  .customer-img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 730px) {
+  input.search {
+    width: 230px;
+  }
+}
+
+@media (max-width: 660px) {
+  .customers {
+    width: 540px;
+  }
+
+  nav {
+    padding: 0 20px;
+    height: 195px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  input.search {
+    width: 450px;
+  }
+}
+
+@media (max-width: 540px) {
+  .customers {
+    width: 420px;
+    row-gap: 26px;
+  }
+}
+
+@media (max-width: 460px) {
+  #dropContainer {
+    align-self: flex-end;
+  }
+  .customers {
+    width: 420px;
+  }
+
+  input.search {
+    width: 380px;
+  }
+
+  header {
+    height: 65px;
+  }
+}
+
+/* Mobile size media query */
+@media (max-width: 440px) {
+  .customers {
+    width: 380px;
+    margin-bottom: 25px;
+    /* column-gap: 26px; */
+  }
+
+  .card {
+    width: 380px;
+    height: 410px;
+    position: relative;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .customer-img {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 5px;
+    width: 109px;
+    height: 109px;
+    border-radius: 50%;
+  }
+
+  .customer-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.5px;
+    margin-left: 24px;
+    margin-top: 20px;
+  }
+
+  .name {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .email {
+    margin-bottom: 7px;
+  }
+
+  .contact li:nth-child(2) {
+    width: 282px;
+  }
+
+  .quote {
+    max-width: 220px;
+    margin-bottom: 10px;
+    min-height: 35px;
+  }
+
+  .mobile-text {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  span.icon {
+    width: 14px;
+  }
+
+  ul.contact li {
+    margin-bottom: 10px;
+    gap: 12px;
+  }
+
+  hr {
+    display: block;
+    color: #e8e8e8;
+    margin: 20px;
+    margin-right: 5px;
+  }
+
+  .dropOptions {
+    z-index: 50;
+  }
+}
